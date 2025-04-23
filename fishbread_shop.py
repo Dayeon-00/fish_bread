@@ -34,6 +34,9 @@ def admin_mode():
         bread_type = input("추가하실 붕어빵을 선택하세요.(팥붕어빵, 슈크림 붕어빵, 초코 붕어빵, 만약 뒤로가길 원하시거나 종료를 원하시면 종료, 뒤로가기를 입력해주세여.):")
         if bread_type == "뒤로가기":
             break
+        if bread_type == "종료":
+            print("메인 메뉴로 돌아갑니다.")
+            break
         if bread_type in stock:
             bread_count = int(input("창고에 채워넣어줄 개수를 입력하세요: ")) #8
             stock[bread_type] += bread_count
