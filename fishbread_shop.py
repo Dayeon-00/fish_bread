@@ -46,12 +46,20 @@ def admin_mode():
     #추가할 붕어빵 맛을 받아요 근데 종료나 뒤로가기가 입력되면 거기서 종료
     #bread_type = 붕어빵 맛을 담는 변수
 
+def fish_sales():
+    # total_sales = sum (sales[key] * price[key] for key in sales) # 코딩테스트에 많이 쓰임items() #딕셔너리를 for문 넣으면 하나씩 데이터를 가져오는데 이 데이터는 key, value
+    total = 0
+    for key in sales
+        # total = total + (sales[key] * price[key])
+        total +=(sales[key] * price[key])
+    print(f'오늘의 총 매출은 {total}원 입니다.')
 
 #붕어빵 main 화면
 while True:
     mode = input("원하는 모드를 선택하세요(주문, 관리자, 종료): ") #주문
     #mode = "종료"
     if mode == "종료":
+        print("시스템을 종료합니다.")
         break
     elif mode == "주문":
         order_bread()
