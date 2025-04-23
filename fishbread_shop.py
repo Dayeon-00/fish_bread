@@ -27,6 +27,24 @@ def order_bread():
                 print(f"재고가 부족합니다. 현재 {stock[bread_type]}개만 주문 가능합니다.")
         else:
             print("정신을 똑바로 차리시고 주문을 다시해주세요👺")
+
+#붕어빵 admin 기능
+def admin_mode():
+    while True:
+        bread_type = input("추가하실 붕어빵을 선택하세요.(팥붕어빵, 슈크림 붕어빵, 초코 붕어빵, 만약 뒤로가길 원하시거나 종료를 원하시면 종료, 뒤로가기를 입력해주세여.):")
+        if bread_type == "뒤로가기":
+            break
+        if bread_type in stock:
+            bread_count = int(input("창고에 채워넣어줄 개수를 입력하세요: ")) #8
+            stock[bread_type] += bread_count
+            print(f'{bread_type}의 재고가 {bread_count}개 추가되어, 현재 {stock[bread_type]}개 입니다.')
+        else:
+            print("정신을 똑바로 차리시고 주문을 다시해주세요👺")
+    #추가할 붕어빵 맛을 받아요 근데 종료나 뒤로가기가 입력되면 거기서 종료
+    #bread_type = 붕어빵 맛을 담는 변수
+
+
+#붕어빵 main 화면
 while True:
     mode = input("원하는 모드를 선택하세요(주문, 관리자, 종료): ") #주문
     #mode = "종료"
