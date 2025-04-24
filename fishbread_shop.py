@@ -49,7 +49,7 @@ def admin_mode():
 def fish_sales():
     # total_sales = sum (sales[key] * price[key] for key in sales) # 코딩테스트에 많이 쓰임items() #딕셔너리를 for문 넣으면 하나씩 데이터를 가져오는데 이 데이터는 key, value
     total = 0
-    for key in sales
+    for key in sales:
         # total = total + (sales[key] * price[key])
         total +=(sales[key] * price[key])
     print(f'오늘의 총 매출은 {total}원 입니다.')
