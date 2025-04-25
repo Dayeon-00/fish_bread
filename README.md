@@ -59,19 +59,7 @@ class BreadShop:
 
 ## ▶ 실행 방법
 
-```bash
-# 1. 프로젝트 디렉터리로 이동
-cd 붕어빵시스템
-
-# 2. 실행
-python3 fishbread_shop.py
-```
-
-실행 후 콘솔에서 모드를 선택해 사용할 수 있습니다:
-
-```
-모드를 선택하세요 (주문, 관리자, 종료) :
-```
+![Image](https://github.com/user-attachments/assets/82e12149-5284-474d-bb59-7144c8c9455c)
 
 ---
 
